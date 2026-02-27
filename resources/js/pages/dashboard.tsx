@@ -20,14 +20,14 @@ interface DashboardProps {
     upcomingMeetingsCount: number;
 }
 
-export default function Dashboard({ 
-    totalBudget, 
-    spentBudget, 
-    activeProjectsCount, 
+export default function Dashboard({
+    totalBudget,
+    spentBudget,
+    activeProjectsCount,
     completedProjectsCount,
-    upcomingMeetingsCount 
+    upcomingMeetingsCount
 }: DashboardProps) {
-    
+
     // Helper to format currency
     const formatCurrency = (amount: number) => {
         return new Intl.NumberFormat('en-PH', {
@@ -40,12 +40,12 @@ export default function Dashboard({
         <AppLayout breadcrumbs={breadcrumbs}>
             <Head title="Dashboard" />
             <div className="flex h-full flex-1 flex-col gap-6 p-6">
-                
+
                 <h1 className="text-2xl font-bold tracking-tight">System Overview</h1>
 
                 {/* Number Cards Row */}
                 <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-                    
+
                     {/* Budget Card */}
                     <div className="flex flex-col gap-1 rounded-xl border border-sidebar-border bg-card p-6 shadow-sm">
                         <div className="flex items-center justify-between text-muted-foreground">

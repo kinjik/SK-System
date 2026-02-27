@@ -15,37 +15,39 @@ import {
 import type { NavItem } from '@/types';
 import AppLogo from './app-logo';
 import { dashboard } from '@/routes';
+import budgets from '@/routes/budgets';
+
 
 const mainNavItems: NavItem[] = [
     {
         title: 'Dashboard',
-        href: dashboard(),
+        href: dashboard().url,
         icon: LayoutGrid,
     },
     {
         title: 'Budgets',
-        href: 'budgets',
+        href: budgets.index().url,
         icon: Wallet,
     },
     {
         title: 'Projects',
-        href: 'projects',
+        href: '#',
         icon: FolderKanban,
     },
     {
         title: 'Meetings',
-        href: 'meetings',
+        href: '#',
         icon: Users,
     },
     {
         title: 'Resolutions',
-        href: 'resolutions',
+        href: '#',
         icon: Files,
     },
 ];
 
 const footerNavItems: NavItem[] = [
-    
+
 ];
 
 export function AppSidebar() {
@@ -55,7 +57,7 @@ export function AppSidebar() {
                 <SidebarMenu>
                     <SidebarMenuItem>
                         <SidebarMenuButton size="lg" asChild>
-                            <Link href={dashboard()} prefetch>
+                            <Link href={dashboard().url} prefetch>
                                 <AppLogo />
                             </Link>
                         </SidebarMenuButton>
