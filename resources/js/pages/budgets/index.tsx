@@ -110,13 +110,13 @@ export default function Index({ budgets, totalBudget, spentBudget }: Props) {
                                     Add Budget
                                 </Button>
                             </DialogTrigger>
-                            <DialogContent className="sm:max-w-[425px] p-0 border-0 bg-transparent shadow-none overflow-hidden">
+                            <DialogContent className="sm:max-w-[425px] p-0 border-0 bg-transparent shadow-none overflow-visible">
                                 {/* The animated shape blur acting as the border/background! */}
                                 <div className="absolute inset-0 z-0 pointer-events-none">
                                     <ShapeBlur
                                         variation={0}
                                         pixelRatioProp={typeof window !== 'undefined' ? window.devicePixelRatio : 1}
-                                        shapeSize={1}
+                                         shapeSize={1}
                                         roundness={0.5}
                                         borderSize={0.05}
                                         circleSize={0.25}
@@ -124,7 +124,7 @@ export default function Index({ budgets, totalBudget, spentBudget }: Props) {
                                     />
                                 </div>
                                 {/* Front Content Area */}
-                                <div className="relative z-10 w-full h-full p-6 bg-card/60 backdrop-blur-xl rounded-lg border border-white/10 m-[1px]">
+                                <div className="relative z-10 w-full h-full p-6 bg-card/80 backdrop-blur-xl rounded-lg border border-white/10 m-3">
                                     <DialogHeader>
                                         <DialogTitle>Create Budget</DialogTitle>
                                         <DialogDescription>
