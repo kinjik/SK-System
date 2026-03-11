@@ -69,8 +69,8 @@ export default function Dashboard({
 
                         {/* Budget Card */}
                         <ElectricBorder
-                            color="magenta"
-                            speed={1}
+                            color="cyan"
+                            speed={0.5}
                             chaos={0.12}
                             style={{ borderRadius: 16 }}
                         >
@@ -88,8 +88,8 @@ export default function Dashboard({
 
                         {/* Active Projects Card */}
                         <ElectricBorder
-                            color="magenta"
-                            speed={1}
+                            color="cyan"
+                            speed={0.5}
                             chaos={0.12}
                             style={{ borderRadius: 16 }}
                         >
@@ -105,8 +105,8 @@ export default function Dashboard({
 
                         {/* Completed Projects Card */}
                         <ElectricBorder
-                            color="magenta"
-                            speed={1}
+                            color="cyan"
+                            speed={0.5}
                             chaos={0.12}
                             style={{ borderRadius: 16 }}
                         >
@@ -122,8 +122,8 @@ export default function Dashboard({
 
                         {/* Upcoming Meetings Card */}
                         <ElectricBorder
-                            color="magenta"
-                            speed={1}
+                            color="cyan"
+                            speed={0.5}
                             chaos={0.12}
                             style={{ borderRadius: 16 }}
                         >
